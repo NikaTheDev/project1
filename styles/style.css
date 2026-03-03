@@ -1,0 +1,162 @@
+/* #region Variables*/
+:root {
+  --main-color: #393e46;
+  --accent-color: #f66f21;
+  --accent-color2: #b79c7a;
+  --text-color-light: #e2e2e2;
+}
+/* #endregion */
+
+/* #region General Styles*/
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--main-color);
+  color: var(--text-color-light);
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* #endregion */
+
+/* #region Header Section Styles*/
+.header {
+  width: 100%;
+  position: sticky;
+  z-index: 100;
+  padding: 1rem;
+}
+
+.headerContent {
+  height: 100px;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.logo,
+.actionBtns {
+  height: 100%;
+  gap: 1rem;
+}
+
+.logo img,
+.actionBtns img {
+  height: 100%;
+  object-fit: contain;
+}
+
+.logo h1 {
+  text-wrap: nowrap;
+}
+
+.actionBtns {
+  gap: 1.5rem;
+}
+
+.actionBtns a {
+  height: 50%;
+}
+
+/* desktop navigation */
+.navList {
+  gap: 3rem;
+}
+.navList a {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* mobile navigation */
+.mobileNav {
+  width: 100%;
+  height: 100vh;
+  padding: 2rem;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 99;
+  background-color: var(--main-color);
+  transition: all 0.4s;
+}
+
+.mobileNav a {
+  font-size: 2rem;
+}
+
+.burgerBtn {
+  display: none;
+  width: 2rem;
+  height: 2rem;
+  background: none;
+  border: none;
+  background-image: url("../assets/icons/bars-solid.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.activeMenu {
+  right: 0;
+}
+
+.activeBurger {
+  background-image: url("../assets/icons/xmark-solid.svg");
+}
+
+/* #endregion */
+
+/* #region Responsive styles */
+/* navigation */
+@media (max-width: 968px) {
+  .burgerBtn {
+    display: flex;
+  }
+
+  .navBar {
+    display: none;
+  }
+}
+@media (max-width: 568px) {
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+}
+/* #endregion */

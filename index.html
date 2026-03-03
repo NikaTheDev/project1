@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <!-- styles -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Thai Food Art</title>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="header">
+      <div class="container flex-row headerContent">
+        <div class="logo flex-row">
+          <img src="./assets/icons/logo.png" alt="logo" />
+          <h1>Thai Food Art</h1>
+        </div>
+        <nav class="navBar flex-row">
+          <ul class="navList flex-row">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./index.html">MENU</a></li>
+            <li><a href="./index.html">ABOUT</a></li>
+            <li><a href="./index.html">CONTACT</a></li>
+          </ul>
+        </nav>
+        <div class="flex-row actionBtns">
+          <a href="userpage.html">
+            <img src="./assets/icons/signin.png" alt="" />
+          </a>
+          <a href="cart.html">
+            <img src="./assets/icons/cart.png" alt="" />
+          </a>
+          <button id="burgerBtn" class="burgerBtn"></button>
+        </div>
+      </div>
+    </header>
+    <!-- mobile navigation -->
+    <nav class="mobileNav flex-column" id="mobileNavId">
+      <ul class="navList flex-column">
+        <li><a href="./index.html">HOME</a></li>
+        <li><a href="./index.html">MENU</a></li>
+        <li><a href="./index.html">ABOUT</a></li>
+        <li><a href="./index.html">CONTACT</a></li>
+      </ul>
+    </nav>
+    <!-- ------------------- -->
+    <!-- Main Section -->
+    <main class="main"></main>
+    <!-- Footer Section -->
+    <footer class="footer"></footer>
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./scripts/app.js" type="module"></script>
+  </body>
+</html>
