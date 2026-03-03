@@ -1,0 +1,31 @@
+@import "../styles/style.css";
+
+.errorPage {
+  margin-top: 3rem;
+}
+
+.errorPage .flex-column {
+  gap: 1.5rem;
+}
+.errorPage h1 {
+  font-size: 6rem;
+  color: var(--accent-color);
+}
+
+.errorPage h2 {
+  color: var(--accent-color2);
+}
+
+.errorPage a {
+  background: var(--accent-color);
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  opacity: 0.8;
+  scale: 0.8;
+  transition: all 1s;
+}
+
+.errorPage a:hover {
+  opacity: 1;
+  scale: 1;
+}
